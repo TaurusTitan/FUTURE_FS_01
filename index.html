@@ -1,11 +1,597 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Victor T. Muguto | Fullstack Developer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>Victor Muguto | Full Stack Developer & Aspiring Cybersecurity Analyst</title>
+  <meta name="description" content="Victor Muguto is a Full Stack Web Developer and aspiring Cybersecurity & Digital Forensics Analyst based in Midrand, Gauteng. BCS student at IIE Varsity College, ALX Alumni, and Future Interns intern." />
+  <meta name="keywords" content="Victor Muguto, full stack developer, cybersecurity, digital forensics, Java, web development, South Africa, Midrand, ALX, IIE Varsity College" />
+  <meta name="author" content="Victor Muguto" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://victormuguto.dev/" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://victormuguto.dev/" />
+  <meta property="og:title" content="Victor Muguto | Full Stack Developer & Aspiring Cybersecurity Analyst" />
+  <meta property="og:description" content="Full Stack Web Developer and aspiring Cybersecurity & Digital Forensics Analyst building scalable, secure solutions." />
+  <meta property="og:image" content="https://victormuguto.dev/og-image.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Victor Muguto | Full Stack Developer" />
+  <meta name="twitter:description" content="Full Stack Web Developer and aspiring Cybersecurity & Digital Forensics Analyst building scalable, secure solutions." />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Victor Tamukanashe Muguto",
+    "url": "https://victormuguto.dev",
+    "jobTitle": "Full Stack Web Developer & Aspiring Cybersecurity Analyst",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Midrand",
+      "addressRegion": "Gauteng",
+      "addressCountry": "ZA"
+    },
+    "sameAs": [
+      "https://linkedin.com/in/victor-muguto"
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    
+
+  <!-- Custom Cursor -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Reading Progress -->
+  <div id="progress-bar" role="progressbar" aria-hidden="true"></div>
+
+  <!-- ── NAV ──────────────────────────────────────────────────── -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <a href="#hero" class="nav-logo">VM<span>.</span></a>
+    <ul class="nav-links" role="list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#portfolio">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta" aria-label="Hire Victor Muguto">Hire Me</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#resume" class="mobile-link">Resume</a>
+    <a href="#portfolio" class="mobile-link">Work</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+    <a href="#contact" class="mobile-link">Hire Me</a>
+  </div>
+
+  <!-- ── HERO ─────────────────────────────────────────────────── -->
+  <section id="hero" aria-label="Introduction">
+    <div class="hero-left">
+      <p class="hero-label">Open to work · Midrand, Gauteng, South Africa</p>
+      <h1 class="hero-title">Full Stack <em>Developer</em> &amp; Security Enthusiast</h1>
+      <p class="hero-desc">
+        I'm <strong>Victor Muguto</strong> — a BCS student, ALX alumni, and aspiring Cybersecurity &
+        Digital Forensics Analyst building scalable backend solutions and secure web applications.
+      </p>
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-outline">Let's Talk</a>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">6+</div>
+          <div class="stat-label">Certifications</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">3+</div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Languages</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right" aria-hidden="true"><img src = "Profile image.jpeg" alt="Victor Muguto" width="500" height="720">
+      
+      <div class="hero-frame"></div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ─────────────────────────────────────────────────── -->
+  <section id="about" aria-labelledby="about-title">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title" id="about-title">About Me</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          I'm a <strong>results-driven Full Stack Web Developer</strong> currently pursuing a Bachelor
+          of Computer and Information Sciences (Application Development) at IIE Varsity College,
+          Midrand — expected graduation November 2027.
+        </p>
+        <p>
+          As an <strong>ALX-certified Virtual Assistant</strong> and active Future Interns Full Stack
+          intern, I bring proven experience in data handling, workflow optimisation, and stakeholder
+          coordination alongside my growing Java and web development expertise. I recently completed
+          Accenture's Software Engineering Job Simulation, reinforcing my commitment to clean,
+          maintainable code.
+        </p>
+        <p>
+          Beyond development, I'm deeply passionate about <strong>Cybersecurity &amp; Digital
+          Forensics</strong>. My personal home-lab — running Active Directory on Windows Server 2022
+          via VirtualBox — keeps my defensive security skills sharp. I speak <strong>English</strong>
+          (native) and <strong>German</strong> (working proficiency).
+        </p>
+        <a href="#contact" class="btn-primary" style="margin-top: 8px;">Get in Touch →</a>
+      </div>
+
+      <div class="skills-grid reveal">
+        <div class="skill-group">
+          <h4>Frontend</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">Figma</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Backend</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Cybersecurity</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Active Directory</span>
+            <span class="skill-tag">Group Policy</span>
+            <span class="skill-tag">Network Security</span>
+            <span class="skill-tag">Packet Tracer</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Tools & Ops</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">VirtualBox</span>
+            <span class="skill-tag">Windows Server</span>
+            <span class="skill-tag">VS Code</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── RESUME ─────────────────────────────────────────────────── -->
+  <section id="resume" aria-labelledby="resume-title">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2 class="section-title" id="resume-title">Resume</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="resume-tabs" role="tablist">
+      <button class="tab-btn active" role="tab" data-tab="experience" aria-selected="true">Experience</button>
+      <button class="tab-btn" role="tab" data-tab="education" aria-selected="false">Education</button>
+      <button class="tab-btn" role="tab" data-tab="skills" aria-selected="false">Skills</button>
+    </div>
+
+    <!-- Experience -->
+    <div class="tab-panel active" id="tab-experience" role="tabpanel">
+      <div class="timeline">
+
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">Mar 2026 — Present</div>
+          <h3 class="timeline-role">Full Stack Web Development Intern</h3>
+          <div class="timeline-place">Future Interns · Remote</div>
+          <p class="timeline-desc">
+            Building real-world, production-ready full stack projects as part of a structured fellowship
+            internship programme. Tasks span frontend UI development, backend API integration, version
+            control with GitHub, and live deployment — culminating in a completion certificate and letter
+            of recommendation upon successful completion.
+          </p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">HTML / CSS</span>
+            <span class="timeline-tag">JavaScript</span>
+            <span class="timeline-tag">React.js</span>
+            <span class="timeline-tag">Node.js</span>
+            <span class="timeline-tag">GitHub</span>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">Jul 2024 — Aug 2024</div>
+          <h3 class="timeline-role">Virtual Assistant</h3>
+          <div class="timeline-place">Freelance · Remote</div>
+          <p class="timeline-desc">
+            Delivered remote administrative and operational support including data handling, calendar
+            management, customer service, and workflow optimisation. Applied ALX-certified methodologies
+            to stakeholder coordination and task automation across multiple clients.
+          </p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">Project Management</span>
+            <span class="timeline-tag">Customer Service</span>
+            <span class="timeline-tag">Data Handling</span>
+            <span class="timeline-tag">Workflow Optimisation</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="tab-panel" id="tab-education" role="tabpanel">
+      <div class="timeline">
+
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">Feb 2025 — Nov 2027</div>
+          <h3 class="timeline-role">Bachelor of Computer and Information Sciences</h3>
+          <div class="timeline-place">IIE Varsity College · Midrand, Gauteng</div>
+          <p class="timeline-desc">
+            Specialising in Application Development, building a strong foundation in Java, databases,
+            UI/UX design, and applied cybersecurity. Semester 2 projects included a fully prototyped
+            Coffee Shop application designed in Figma.
+          </p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">Application Development</span>
+            <span class="timeline-tag">Java</span>
+            <span class="timeline-tag">Software Engineering</span>
+            <span class="timeline-tag">UI/UX Design</span>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">2024</div>
+          <h3 class="timeline-role">Virtual Assistant Certification</h3>
+          <div class="timeline-place">ALX Africa · Online</div>
+          <p class="timeline-desc">
+            Completed the ALX Virtual Assistant programme, gaining certification in remote work
+            methodologies, productivity tools, project coordination, and professional communication.
+          </p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">ALX Alumni</span>
+            <span class="timeline-tag">Remote Work</span>
+            <span class="timeline-tag">Project Coordination</span>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">Feb 2020 — Nov 2021</div>
+          <h3 class="timeline-role">Business Studies (Grade B)</h3>
+          <div class="timeline-place">Petra Senior College</div>
+          <p class="timeline-desc">
+            Completed Business Studies with a B grade. Participated in Field Hockey, Data Entry, and
+            Python programming as extracurricular activities, building early technical and leadership
+            skills.
+          </p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">Business Studies</span>
+            <span class="timeline-tag">Python</span>
+            <span class="timeline-tag">Data Entry</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="tab-panel" id="tab-skills" role="tabpanel">
+      <div class="skills-bars" style="max-width: 600px;">
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name">HTML / CSS / JavaScript</span>
+            <span class="skill-bar-pct">85%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" data-width="85"></div>
+          </div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name">Java (Backend Development)</span>
+            <span class="skill-bar-pct">70%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill gold" data-width="70"></div>
+          </div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name">Python</span>
+            <span class="skill-bar-pct">68%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" data-width="68"></div>
+          </div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name">Active Directory & Group Policy</span>
+            <span class="skill-bar-pct">75%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill gold" data-width="75"></div>
+          </div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name">Figma / UI Design</span>
+            <span class="skill-bar-pct">72%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" data-width="72"></div>
+          </div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name">GitHub & Version Control</span>
+            <span class="skill-bar-pct">80%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill gold" data-width="80"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="resume-download">
+        <a href="#" class="btn-primary" download aria-label="Download full CV PDF">
+          ↓ Download CV
+        </a>
+        <span style="font-family: var(--mono); font-size: .72rem; color: var(--muted);">PDF · Updated 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PORTFOLIO ───────────────────────────────────────────────── -->
+  <section id="portfolio" aria-labelledby="portfolio-title">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2 class="section-title" id="portfolio-title">Projects</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="portfolio-filters" role="group" aria-label="Filter projects">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="security">Security</button>
+      <button class="filter-btn" data-filter="design">Design</button>
+    </div>
+
+    <div class="portfolio-grid" id="portfolio-grid">
+
+      <article class="project-card" data-cat="security" aria-label="Virtual Home-Lab project">
+        <div class="project-visual">⬛</div>
+        <div class="project-overlay"></div>
+        <div class="project-card-inner">
+          <div class="project-meta">
+            <div class="project-cat">Cybersecurity · Home Lab</div>
+            <h3 class="project-name">Virtual Home Lab</h3>
+            <p class="project-desc">Windows Server 2022 environment on VirtualBox — Active Directory management, GPO enforcement, user account administration, and network configuration practice.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">Details →</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-cat="design" aria-label="Coffee Shop UI/UX project">
+        <div class="project-visual">◈</div>
+        <div class="project-overlay"></div>
+        <div class="project-card-inner">
+          <div class="project-meta">
+            <div class="project-cat">Design · UI/UX · Figma</div>
+            <h3 class="project-name">Coffee Shop App UI</h3>
+            <p class="project-desc">IIE Varsity College semester project — designed a full coffee shop application from welcome screen to checkout, focusing on prototyping and intuitive user flow.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">Figma ↗</a>
+              <a href="#" class="project-link">Case Study →</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-cat="web" aria-label="Personal Portfolio Website">
+        <div class="project-visual">◉</div>
+        <div class="project-overlay"></div>
+        <div class="project-card-inner">
+          <div class="project-meta">
+            <div class="project-cat">Web · Frontend</div>
+            <h3 class="project-name">Personal Portfolio</h3>
+            <p class="project-desc">This site — Task 1 of the Future Interns Full Stack internship. Responsive, accessible, and structured with semantic HTML, CSS custom properties, and vanilla JS.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">GitHub ↗</a>
+              <a href="#" class="project-link">Live ↗</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-cat="web" aria-label="Accenture Software Engineering Simulation">
+        <div class="project-visual">◇</div>
+        <div class="project-overlay"></div>
+        <div class="project-card-inner">
+          <div class="project-meta">
+            <div class="project-cat">Web · Software Engineering</div>
+            <h3 class="project-name">Accenture SE Simulation</h3>
+            <p class="project-desc">Completed Accenture's Software Engineering Job Simulation, demonstrating SDLC principles, Agile methodology, and software engineering best practices.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">Certificate →</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-cat="security" aria-label="Cisco Cybersecurity Certifications">
+        <div class="project-visual">⊙</div>
+        <div class="project-overlay"></div>
+        <div class="project-card-inner">
+          <div class="project-meta">
+            <div class="project-cat">Security · Networking · Cisco</div>
+            <h3 class="project-name">Cisco Certifications</h3>
+            <p class="project-desc">Earned Cisco's Introduction to Cybersecurity (Feb 2026) and Getting Started with Packet Tracer (May 2025), covering network vulnerabilities and cyber best practices.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">View Credentials →</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-cat="web" aria-label="The Blue Project collaboration">
+        <div class="project-visual">⬡</div>
+        <div class="project-overlay"></div>
+        <div class="project-card-inner">
+          <div class="project-meta">
+            <div class="project-cat">Web · Team Collaboration</div>
+            <h3 class="project-name">The Blue Project</h3>
+            <p class="project-desc">Restaurant booking system built collaboratively through the Code To Career Community — combining agile teamwork, UI design, and full stack development on a real-world brief.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">Details →</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ── CONTACT ────────────────────────────────────────────────── -->
+  <section id="contact" aria-labelledby="contact-title">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2 class="section-title" id="contact-title">Get In Touch</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <h3>Let's build something great together.</h3>
+        <p>
+          Whether you have a project in mind, want to discuss a collaboration, or have an opportunity
+          to share — my inbox is always open. I'll get back to you as soon as possible.
+        </p>
+
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">✉</div>
+            <div class="contact-item-text">
+              <div class="contact-item-label">Email</div>
+              <div class="contact-item-val">
+                <a href="mailto:mugutovictor@gmail.com">mugutovictor@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">◎</div>
+            <div class="contact-item-text">
+              <div class="contact-item-label">Location</div>
+              <div class="contact-item-val">Midrand, Gauteng, South Africa · Remote-friendly</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">⊙</div>
+            <div class="contact-item-text">
+              <div class="contact-item-label">Status</div>
+              <div class="contact-item-val" style="color: var(--teal); font-weight: 600;">
+                ● Open to Work · Internships &amp; Graduate Roles
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contact-form" novalidate aria-label="Contact form">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="cf-name">Name *</label>
+            <input class="form-input" type="text" id="cf-name" name="name"
+              placeholder="Jane Smith" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="cf-email">Email *</label>
+            <input class="form-input" type="email" id="cf-email" name="email"
+              placeholder="jane@example.com" required autocomplete="email" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="cf-subject">Subject</label>
+          <input class="form-input" type="text" id="cf-subject" name="subject"
+            placeholder="Project Inquiry · Collaboration · Opportunity" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="cf-message">Message *</label>
+          <textarea class="form-textarea" id="cf-message" name="message"
+            placeholder="Tell me about your project, opportunity, or just say hello…" required></textarea>
+        </div>
+        <div>
+          <button type="submit" class="form-submit" id="form-submit">
+            <span id="btn-text">Send Message</span>
+            <span id="btn-arrow">→</span>
+          </button>
+        </div>
+        <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────────── -->
+  <footer>
+    <div class="footer-left">
+      <div class="footer-logo">Victor Muguto<span>.</span></div>
+      <div class="footer-copy">© 2026 Victor Muguto · Midrand, Gauteng, ZA · All rights reserved</div>
+    </div>
+    <div class="footer-social">
+      <a href="https://linkedin.com/in/victor-muguto" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+      <a href="https://github.com/TaurusTitan" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <button id="scroll-top" aria-label="Scroll to top">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+      <path d="M8 13V3M3 7l5-5 5 5"/>
+    </svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="main.js"></script>
 </body>
 </html>
