@@ -291,7 +291,7 @@ nav.scrolled { border-color: var(--border); }
   opacity: 0;
   animation: fadeUp .6s .8s forwards;
 }
-.stat-item { }
+
 .stat-num {
   font-family: var(--serif);
   font-size: 2.4rem;
@@ -473,7 +473,7 @@ section { padding: 120px 80px; }
 }
 
 .skills-bars { display: flex; flex-direction: column; gap: 24px; }
-.skill-bar-item {}
+
 .skill-bar-header {
   display: flex; justify-content: space-between;
   margin-bottom: 8px;
@@ -660,7 +660,7 @@ section { padding: 120px 80px; }
   flex-shrink: 0;
   font-size: .9rem;
 }
-.contact-item-text {}
+
 .contact-item-label {
   font-family: var(--mono);
   font-size: .65rem;
@@ -756,7 +756,7 @@ footer {
   align-items: center;
   gap: 40px;
 }
-.footer-left {}
+
 .footer-logo {
   font-family: var(--serif);
   font-size: 1.5rem;
